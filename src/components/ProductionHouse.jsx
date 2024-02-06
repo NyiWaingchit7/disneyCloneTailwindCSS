@@ -15,6 +15,7 @@ const ProductionHouse = () => {
     <div className="flex gap-2 md:gap-5 p-5 px-5 md:px-16">
       {productionHouseList.map((d) => (
         <div
+          key={d.id}
           className=" border-[2px] border-gray-400 rounded-lg hover:scale-105 transition-all duration-100
          ease-in-out cursor-pointer relative shadow-xl shadow-black "
         >

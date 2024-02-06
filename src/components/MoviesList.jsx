@@ -46,7 +46,7 @@ const MoviesList = ({ genreId, indexNumber }) => {
           ref={elementRef}
         >
           {showMovies.map((item) => (
-            <div className=" w-[100%]">
+            <div className=" w-[100%]" key={item.id}>
               {indexNumber % 3 == 0 ? (
                 <HrMovieCard movies={item} />
               ) : (

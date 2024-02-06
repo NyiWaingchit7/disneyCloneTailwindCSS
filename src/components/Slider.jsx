@@ -41,7 +41,7 @@ const Slider = () => {
             className=" min-w-full md:h-[350px] object-cover object-left-top mr-5 rounded-md hover:border-4 border-gray-400
             transition-all duration-100 ease-in "
             src={IMAGE_BASE_URL + d.backdrop_path}
-            alt=""
+            key={d.id}
           />
         ))}
       </div>
